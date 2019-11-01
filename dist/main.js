@@ -86,14 +86,39 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/clearContents.js":
+/*!******************************!*\
+  !*** ./src/clearContents.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return clearContents; });\nfunction clearContents(container) {\n  while (container.firstChild) {\n    container.removeChild(container.firstChild);\n  }\n}\n\n\n//# sourceURL=webpack:///./src/clearContents.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log('Eureka!');\n\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _page_1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./page-1 */ \"./src/page-1.js\");\n\n\nsetTimeout(() => {\n  Object(_page_1__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(document.getElementById('content'));\n}, 1000);\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/page-1.js":
+/*!***********************!*\
+  !*** ./src/page-1.js ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return populatePageOne; });\n/* harmony import */ var _clearContents__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./clearContents */ \"./src/clearContents.js\");\n\n\nfunction populatePageOne(container) {\n  Object(_clearContents__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(container);\n\n  const title = document.createElement('h1');\n  title.innerText = 'Restaurant Malola';\n  container.appendChild(title);\n\n  const subtitle = document.createElement('h2');\n  subtitle.innerText = 'The best food in town! Sopa tarasca, Corundas, Enchiladas morelianas o placeras, Morisqueta, Carnitas, Aporreadillo, Uchepos, Chongos zamoranos, Ate, Nieve de pasta and much more...';\n  container.appendChild(subtitle);\n}\n\n\n//# sourceURL=webpack:///./src/page-1.js?");
 
 /***/ })
 
