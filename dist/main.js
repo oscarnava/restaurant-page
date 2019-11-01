@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/about-page.js":
+/*!***************************!*\
+  !*** ./src/about-page.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return populateAboutPage; });\n/* harmony import */ var _updateContents__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./updateContents */ \"./src/updateContents.js\");\n\n\nfunction populateAboutPage() {\n  const title = document.createElement('h1');\n  title.innerText = 'Restaurant Malola';\n\n  const subtitle = document.createElement('h2');\n  subtitle.innerText = 'The best food in town! Sopa tarasca, Corundas, Enchiladas morelianas o placeras, Morisqueta, Carnitas, Aporreadillo, Uchepos, Chongos zamoranos, Ate, Nieve de pasta and much more...';\n\n  Object(_updateContents__WEBPACK_IMPORTED_MODULE_0__[\"default\"])([title, subtitle]);\n}\n\n\n//# sourceURL=webpack:///./src/about-page.js?");
+
+/***/ }),
+
 /***/ "./src/clearContents.js":
 /*!******************************!*\
   !*** ./src/clearContents.js ***!
@@ -98,6 +110,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./src/fadein.js":
+/*!***********************!*\
+  !*** ./src/fadein.js ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return fadeIn; });\nfunction fadeIn(element, step = 100) {\n  let opacity = 0.0;\n  (function f() {\n    opacity += 0.10001;\n    element.style.opacity = opacity.toFixed(1);\n    if (opacity < 1.0) {\n      setTimeout(f, step);\n    }\n  }());\n}\n\n\n//# sourceURL=webpack:///./src/fadein.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -106,19 +130,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _page_1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./page-1 */ \"./src/page-1.js\");\n\n\nsetTimeout(() => {\n  Object(_page_1__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(document.getElementById('content'));\n}, 1000);\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fadein__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fadein */ \"./src/fadein.js\");\n/* harmony import */ var _about_page__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about-page */ \"./src/about-page.js\");\n\n\n\nObject(_about_page__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\nObject(_fadein__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(document.getElementsByTagName('body')[0], 50);\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/page-1.js":
-/*!***********************!*\
-  !*** ./src/page-1.js ***!
-  \***********************/
+/***/ "./src/updateContents.js":
+/*!*******************************!*\
+  !*** ./src/updateContents.js ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return populatePageOne; });\n/* harmony import */ var _clearContents__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./clearContents */ \"./src/clearContents.js\");\n\n\nfunction populatePageOne(container) {\n  Object(_clearContents__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(container);\n\n  const title = document.createElement('h1');\n  title.innerText = 'Restaurant Malola';\n  container.appendChild(title);\n\n  const subtitle = document.createElement('h2');\n  subtitle.innerText = 'The best food in town! Sopa tarasca, Corundas, Enchiladas morelianas o placeras, Morisqueta, Carnitas, Aporreadillo, Uchepos, Chongos zamoranos, Ate, Nieve de pasta and much more...';\n  container.appendChild(subtitle);\n}\n\n\n//# sourceURL=webpack:///./src/page-1.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _clearContents__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./clearContents */ \"./src/clearContents.js\");\n\n\nconst updateContents = (() => {\n  const container = document.getElementById('content');\n  return (contents) => {\n    const fragment = document.createDocumentFragment();\n    contents.forEach((element) => fragment.appendChild(element));\n    Object(_clearContents__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(container);\n    container.appendChild(fragment);\n  };\n})();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (updateContents);\n\n\n//# sourceURL=webpack:///./src/updateContents.js?");
 
 /***/ })
 

@@ -1,5 +1,5 @@
-import populatePageOne from './page-1';
+import fadeIn from './fadein'
+import populateAboutPage from './about-page';
 
-setTimeout(() => {
-  populatePageOne(document.getElementById('content'));
-}, 1000);
+populateAboutPage();
+fadeIn(document.getElementsByTagName('body')[0], 50);
