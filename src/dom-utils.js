@@ -9,7 +9,7 @@ export function clearContents(container) {
 
 export function updateContents(contents) {
   const fragment = document.createDocumentFragment();
-  contents.forEach((element) => fragment.appendChild(element));
+  contents.forEach(element => fragment.appendChild(element));
   clearContents(mainContainer);
   mainContainer.appendChild(fragment);
 }
