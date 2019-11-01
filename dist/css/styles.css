@@ -63,16 +63,21 @@ nav {
   list-style: none;
   display: inline-block;
   background-color: tomato;
+  box-shadow: 2px 2px 5px 2px #2e1d18;
   padding: .5rem 1rem;
   border-radius: 10px;
   cursor: pointer;
+}
+
+#menu .item:hover {
+  box-shadow: 1px 1px 5px 0px #2e1d18;
 }
 
 #about-container, #contact-container {
   margin: 0 auto;
   padding: 1rem;
   background-color: #fef6dea8;
-  box-shadow: 10px 10px 5px -6px 	#331a16;
+  box-shadow: 10px 10px 5px -6px #331a16;
   border-radius: 20px;
 }
 
