@@ -24,7 +24,7 @@ const dishesInfo = [
   },
   {
     img: 'carnitas.jpg',
-    head: 'Carnitas estilo Michoacán:',
+    head: 'Carnitas estilo Michoacán',
     body: 'Es imposible hablar de la cocina michoacana sin mencionar las célebres carnitas de cerdo, especialmente famosas en el municipio de Quiroga. Tradicionalmente se preparan en grandes ollas de cobre (elaboradas en Santa Clara del Cobre) donde distintas partes del cerdo se fríen en manteca del mismo animal. Se sirven en tacos, con tortillas de maíz, cilantro, cebolla, salsas y jugo de limón.',
   },
   {
