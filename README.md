@@ -8,5 +8,5 @@ This project will dynamically render a simple restaurant homepage.
 
 [Oscar Nava](https://github.com/oscarnava).
 
-<!-- ## Live site
-[Restaurant page]() -->
+## Live site
+[Restaurant page](https://raw.githack.com/oscarnava/restaurant-page/dynamic-design/dist/index.html)
