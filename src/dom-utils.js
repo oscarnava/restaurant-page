@@ -7,13 +7,11 @@ export function clearContents(container) {
   }
 }
 
-const updateContents = (() => {
-  return (contents) => {
-    const fragment = document.createDocumentFragment();
-    contents.forEach((element) => fragment.appendChild(element));
-    clearContents(mainContainer);
-    mainContainer.appendChild(fragment);
-  };
-})();
+export function updateContents(contents) {
+  const fragment = document.createDocumentFragment();
+  contents.forEach((element) => fragment.appendChild(element));
+  clearContents(mainContainer);
+  mainContainer.appendChild(fragment);
+}
 
-export { updateContents, qrySelect, mainContainer };
+export { qrySelect, mainContainer };
