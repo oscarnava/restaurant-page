@@ -1,5 +1,3 @@
-// TODO: Refactor to have a generic fadeId/fadeOut
-
 function fade(element, delay = 100, start = 0, stop = 10, delta = 1) {
   (function f() {
     start += delta;

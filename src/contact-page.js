@@ -1,4 +1,4 @@
-import updateContents from './updateContents';
+import { updateContents } from './dom-utils';
 
 const imagePath = 'img';
 let contents = null;
@@ -30,8 +30,6 @@ function createContents() {
   contactCtnr.appendChild(email);
   contactCtnr.appendChild(cellular);
   contactCtnr.appendChild(whats);
-
-  console.log('Contact page contents created');
 
   return [contactCtnr];
 }

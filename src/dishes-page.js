@@ -1,4 +1,4 @@
-import updateContents from './updateContents';
+import { updateContents } from './dom-utils';
 
 const imagePath = 'img';
 const dishesInfo = [
@@ -77,8 +77,6 @@ function createContents() {
     bodyElem.innerText = body;
     dish.appendChild(bodyElem);
   });
-
-  console.log('Dishes page contents created');
 
   return [dishCtnr];
 }
