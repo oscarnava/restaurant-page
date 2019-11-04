@@ -1,0 +1,25 @@
+{
+  "name": "restaurant-page",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Dynamically rendering a simple restaurant homepage.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch"
+  },
+  "keywords": [
+    "microverse",
+    "odin-project"
+  ],
+  "author": "Oscar Nava Trujillo aka. Monstruo",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
